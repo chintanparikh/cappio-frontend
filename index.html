@@ -11,7 +11,13 @@
         <script type="text/javascript" src="js/animations.js"></script>
         <script type="text/javascript" src="js/tooltips.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-        </head>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="vendor/js/nv.d3.min.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="vendor/css/nv.d3.css">
+        <script type="text/javascript" src="js/chart.js"></script>
+
+
+    </head> 
     <body>
         <div class="container">
             <div class="row">
@@ -45,7 +51,10 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="card">
-                        <h2>Fundamentals</h2>
+                        <div id="chart">
+                          <svg></svg>
+                        </div>
+
                     </div>
                 </div>
             </div>

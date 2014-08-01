@@ -14,7 +14,7 @@ body {
 	background: #ffffff;
 	margin: 5px 5px; 
 	padding: 10px 30px; 
-	height: 200px;
+	min-height: 200px;
 	border: 1px solid #EEEEEE;
     -webkit-transition: all .1s ease-out;
     transition: all .1s ease-out;
@@ -113,7 +113,7 @@ li.green, li.red, li.yellow {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 20px;
-	padding: 50px;
+	padding-top: 50px;
 }
 
 #rating .target-price {
@@ -170,6 +170,10 @@ li.green, li.red, li.yellow {
     right: 10px;
     left: auto;
     margin: 0;
+}
+
+#chart svg {
+  height: 300px;
 }
 
 
