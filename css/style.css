@@ -1,0 +1,191 @@
+
+body {
+	background: #f9f9f9;
+	font-family: "Roboto", sans-serif;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding:0;
+}
+
+
+.card {
+	/*border-radius: 3px;*/
+	background: #ffffff;
+	margin: 5px 5px; 
+	padding: 10px 30px; 
+	height: 200px;
+	border: 1px solid #EEEEEE;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.03);
+    box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.03);
+}
+
+.green {
+	background: #14e715;
+	border-color: #32CA31;
+	color: #056f00;
+}
+
+.yellow {
+	background: #ffd600;
+	border-color: #fbc02d;
+	color: #BC9021;
+}
+
+.red {
+	background: #ff3d00;
+	border-color: #bf360c;
+	color: #8E2707;
+}
+
+li.green, li.red, li.yellow {
+	background: none;
+}
+
+.red .green {
+	color: #045A00;
+}
+
+.card:hover {
+	-webkit-transform: scale(1.01) !important;
+	-ms-transform: scale(1.01) !important;
+	transform: scale(1.01) !important;
+	-webkit-box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.15);
+	box-shadow: 0px 2px 10px 3px rgba(0,0,0,0.15);
+}
+
+.card.hovered { /*makes it 'elevate'*/
+}
+
+.ticker {
+	font-size: 45px;
+}
+
+.price-change {
+	font-size: 14px;
+	margin-top: -20px;
+	line-height: 45px;
+}
+
+.sector {
+	text-decoration: underline;
+}
+
+.company-name {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.company-description {
+	font-size: 12px;
+	color: rgba(0, 0, 0, 0.5);
+	margin-top: 20px;
+}
+
+#competitors {
+	padding-right: 20px;
+}
+#competitors h2 {
+	font-size: 18px;
+}
+
+#competitors ul {
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+#competitors li {
+	text-align: center;
+	float: right;
+	clear: both;
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#rating {
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 50px;
+}
+
+#rating .target-price {
+	font-size: 14px;
+	font-weight: normal;
+	text-transform: none;
+	color: #056f00;
+}
+
+.definition {
+	border-bottom: 1px dotted;
+}
+
+#tooltip
+{
+    text-align: center;
+    color: #fff;
+    background: #111;
+    position: absolute;
+    z-index: 100;
+    padding: 15px;
+}
+ 
+#tooltip:after /* triangle decoration */
+{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #111;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -10px;
+}
+
+#tooltip.top:after
+{
+    border-top-color: transparent;
+    border-bottom: 10px solid #111;
+    top: -20px;
+    bottom: auto;
+}
+
+#tooltip.left:after
+{
+    left: 10px;
+    margin: 0;
+}
+
+#tooltip.right:after
+{
+    right: 10px;
+    left: auto;
+    margin: 0;
+}
+
+
+/* Animations */
+
+.ripple { /*stylings for the circular overlay*/
+  position: absolute;
+  border-radius: 100%;
+  width: 0;
+  height: 0;
+  background: rgba(0,0,0, .05);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+ 
+.notransition { /*used to reset the ripple without an animatiion*/
+  -webkit-transition: none !important;
+  transition: none !important;
+}
