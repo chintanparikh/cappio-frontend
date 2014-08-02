@@ -21,30 +21,37 @@
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-10">
-                    <div class="card" id="main-stats">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="info">
-                                <div class="ticker">AAPL <span class="hidden-xs hidden-sm hidden-md">-</span> $94.03<span class="price-change" style="color: #12c700;">(+0.55/+0.59%)</span></div>
-                                <div class="company-name">Apple Inc. is a <span class="sector">Technology</span> company</div>
-                                <p class="company-description hidden-xs hidden-sm hidden-md">Apple Inc. and its wholly-owned subsidiaries design, manufacture, and market mobile communication and media devices, personal computers, and portable digital music players worldwide.</p>
-                            </div>
-                            <div id="competitors" class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="text-align: right;">
-                                <h2>Competitors</h2>
-                                <ul>
-                                    <li style="background:#14e715">GOOG</li>
-                                    <li style="background:#ff3d00; color: #ffffff;">BBRY</li>
-                                    <li style="background:#ffd600">HPQ</li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card force-height" id="main-stats">
+                        <div class="ticker">AAPL</div>
+                        <span style="font-size: 30px;">$94.03 </span>
+                        <span class="price-change" style="color: #12c700; line-height: 30px; position: relative; bottom: 3px;">(+0.55/+0.59%)</span>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-2 hidden-xs">
-                    <div class="card green" id="rating" style="text-align: center;">
+                    <div class="card green force-height" id="rating" style="text-align: center;">
                         <span class="glyphicon glyphicon-heart" style="font-size: 40px;"></span><br />
-                        <p class="hidden-sm">Strong Buy</p><br />
+                        <p class="hidden-sm">Strong Buy</p>
                         <span class="target-price hidden-sm hidden-md">Target Price: $1000</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4">
+                    <div class="card force-height" id="description">
+                        <div class="company-name">Apple Inc. is a <span class="sector">Technology</span> company</div>
+                        <p class="company-description">Apple Inc. and its wholly-owned subsidiaries design, manufacture, and market mobile communication and media devices, personal computers, and portable digital music players worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card no-padding force-height" id="competitors">
+                        <h2>Competitors</h2>
+                        <div class="card-content">
+                            <ul>
+                                <li style="background:#14e715">GOOG</li>
+                                <li style="background:#ff3d00; color: #ffffff;">BBRY</li>
+                                <li style="background:#ffd600">HPQ</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
