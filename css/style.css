@@ -47,7 +47,6 @@ body {
 
 /* Only needs to be used in conjuction with no-padding */
 .card-content {
-	padding: 10px 30px;
 }
 
 .green {
@@ -117,17 +116,33 @@ li.green, li.red, li.yellow {
 #competitors ul {
 	list-style-type: none;
 	margin-right: 20px;
+	padding-left: 20px;
 }
 
-#competitors li {
-	text-align: center;
-	float: right;
-	clear: both;
-	height: 30px;
-	line-height: 30px;
-	width: 60px;
-	margin-bottom: 5px;
-	border-radius: 5px;
+#competitors .chip {
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 8px;
+	padding: 4px 0;
+	padding-right: 10px;
+	background: black;
+	border-radius: 999px;
+	background: rgb(244, 244, 244);
+}
+
+#competitors .chip:hover {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	position: relative;
+	bottom: 1px;
+}
+
+#competitors .chip .chip-ticker {
+	padding: 5px;
+	border-radius: 999px;
+}
+
+#competitors .chip .chip-company-name {
+	margin-left: 3px;
 }
 
 #rating {
