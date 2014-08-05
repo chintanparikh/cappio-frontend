@@ -3,6 +3,15 @@ $(document).ready( function (){
 $(".card").each( function(){
    var $this = $(this);
 $this.append("<div class='ripple'></div>");
+
+
+  $("#analysis .card").click(function() {
+    var _this = $(this);
+    window.setTimeout(function() {
+      _this.parent().toggleClass('col-sm-3 col-md-3 col-lg-3').toggleClass('col-sm-9 col-md-9 col-lg-9');
+      _this.find('.onclick').toggleClass('hidden')
+    }, 400)
+  });
 });
    
    
@@ -38,3 +47,4 @@ $ripple.removeClass("notransition");
   }, 300 );
 });
 });
+
